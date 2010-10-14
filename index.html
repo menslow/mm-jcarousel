@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us">
+<head>
+<title>jCarousel Circular</title>
+<script type="text/javascript" src="jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="jquery.jcarousel.min.js"></script>
+<link rel="stylesheet" type="text/css" href="carousel.css" />
+
+<script type="text/javascript">
+
+jQuery(document).ready(function() {
+    jQuery('#_carousel').jcarousel({
+    	wrap: 'circular',
+    	size: 3, // The number of total items.
+    	scroll: 1, // The number of items to scroll by.
+    	animation: 400 // The speed of the scroll animation
+    });
+});
+
+</script>
+
+</head>
+<body>
+  <ul id="_carousel" class="jcarousel-skin-base">
+    <li><img src="slide1.jpg" alt="" /></li>
+    <li><img src="slide2.jpg" alt="" /></li>
+    <li><img src="slide3.jpg" alt="" /></li>
+  </ul>
+</body>
+</html>
